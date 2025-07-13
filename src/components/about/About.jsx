@@ -14,6 +14,7 @@ const About = () => {
         <img src={AboutImg} alt="profile" className="about__img" />
         <div className="about__data">
           <p className="about__description">
+            <br/>
             I'm Ashin Varghese, a Computer Science student at Amrita Vishwa Vidyapeetham, Coimbatore. I am currently
             focused on developing a strong foundation in core technical skills through academic learning and hands-on projects.
             I approach every task with attention to detail, consistency, and a commitment to delivering high-quality results.

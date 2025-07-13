@@ -1,0 +1,109 @@
+.skills{
+    margin-bottom: 6rem;
+}
+
+.skills__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+
+.skills__card {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 150px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.skills__card:hover {
+  transform: translateY(-6px);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.skills__icon {
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.skills__name {
+  
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+/* Specific original brand colors */
+.python   { color: #3776AB; }       /* Python blue */
+.java     { color: #007396; }       /* Java blue */
+.haskell  { color: #5D4F85; }       /* Haskell purple */
+.c        { color: #A8B9CC; }       /* C light blue */
+.html     { color: #E44D26; }       /* HTML orange */
+.css      { color: #1572B6; }       /* CSS blue */
+.javascript { color: #F7DF1E; }     /* JS yellow */
+.mysql    { color: #4479A1; }       /* MySQL blue */
+.reactjs  { color: #61DAFB; }       /* React cyan */
+
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .skills__container {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+  }
+
+  .skills__card {
+    max-width: 130px;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .skills__container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .skills__card {
+    padding: 1rem;
+    min-width: 90px;
+    scroll-snap-align: start;
+  }
+
+  .skills__icon {
+    font-size: 2rem;
+  }
+
+  .skills__name {
+    font-size: 0.9rem;
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 480px) {
+  .skills__container {
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 0.75rem;
+    padding: 0.5rem;
+  }
+
+  .skills__card {
+    padding: 0.75rem;
+    width: 95%;
+  }
+
+  .skills__icon {
+    font-size: 1.8rem;
+  }
+
+  .skills__name {
+    font-size: 0.85rem;
+  }
+}
