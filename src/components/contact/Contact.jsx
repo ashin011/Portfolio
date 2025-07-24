@@ -1,45 +1,69 @@
 import React from "react";
 import "./contact.css";
 
-const Contact = () => {
+function Contact() {
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">Contact Me</h2>
-      <span className="section__subtitle"></span>
 
-      <div className="contact__container container grid">
-        <div className="contact__options">
+      <div className="contact__container">
+        {/* Left: Contact Info */}
+        <div className="contact__left">
+          <div className="contact__card">
+            <i className="uil uil-phone contact__card-icon"></i>
+            <h3 className="contact__card-title">Phone</h3>
+            <span className="contact__card-data">+91 9995284466</span>
+          </div>
 
-          <a href="tel:‪+919995284466‬" className="contact__card" target="_blank" rel="noreferrer">
-            <i className="uil uil-phone contact__icon"></i>
-            <h3 className="contact__title">Phone</h3>
-            <span className="contact__data">‪+91 9995284466‬</span>
-          </a>
-
-          <a href="mailto:ashinv101@gmail.com" className="contact__card" target="_blank" rel="noreferrer">
-            <i className="uil uil-envelope contact__icon"></i>
-            <h3 className="contact__title">Email</h3>
-            <span className="contact__data">ashinv101@gmail.com</span>
-            
-          </a>
-
-        
-          <a href="https://www.linkedin.com/in/ashin-varghese-471019364/" className="contact__card" target="_blank" rel="noreferrer">
-            <i className="uil uil-linkedin contact__icon"></i>
-            <h3 className="contact__title">LinkedIn</h3>
-            <span className="contact__data">linkedin.com/in/ashin-varghese</span>
-          </a>
-
-          <a href="https://www.instagram.com/_ashin._.varghese_/" className="contact__card" target="_blank" rel="noreferrer">
-            <i className="uil uil-instagram contact__icon"></i>
-            <h3 className="contact__title">Instagram</h3>
-            <span className="contact__data">_ashin._.varghese_</span>
-          </a>
+          <div className="contact__card">
+            <i className="uil uil-envelope contact__card-icon"></i>
+            <h3 className="contact__card-title">Email</h3>
+            <span className="contact__card-data">ashinv101@gmail.com</span>
+          </div>
         </div>
 
+        {/* Separator Line */}
+        <div className="contact__divider"></div>
+
+        {/* Right: Contact Form */}
+        <div className="contact__right">
+          <form className="contact__form">
+            <div className="contact__form-group">
+              <label className="contact__label">Name</label>
+              <input
+                type="text"
+                className="contact__input"
+                placeholder="Your Name"
+              />
+            </div>
+
+            <div className="contact__form-group">
+              <label className="contact__label">Email</label>
+              <input
+                type="email"
+                className="contact__input"
+                placeholder="Your Email"
+              />
+            </div>
+
+            <div className="contact__form-group">
+              <label className="contact__label">Message</label>
+              <textarea
+                className="contact__input"
+                rows="4"
+                placeholder="Write your message..."
+              ></textarea>
+            </div>
+
+            <button type="submit" className="button button--flex">
+              Send Message
+              <i className="uil uil-message button__icon"></i>
+            </button>
+          </form>
+        </div>
       </div>
     </section>
   );
-};
+}
 
-export default Contact;
+export default Contact;
