@@ -98,7 +98,7 @@ return (
     <div className="education__container">
 
       <div className="education__card">
-        <i className="uil uil-briefcase-alt education__icon"></i>
+        <i className="uil uil-briefcase-alt education__icon"> </i>
         <h4 className="education__degree">CIAL</h4>
         <p className="education__institute">Completed a one-month project in the IT Department at<br></br> Cochin International Airport.</p>
         <p className="education__details">May 2025 - June 2025</p>
