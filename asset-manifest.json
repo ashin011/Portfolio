@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.a46239f8.css",
+    "main.js": "/Portfolio/static/js/main.84b64c85.js",
+    "static/js/453.f07e1176.chunk.js": "/Portfolio/static/js/453.f07e1176.chunk.js",
+    "static/media/profile.jpg": "/Portfolio/static/media/profile.935e2918880cfb19a85c.jpg",
+    "static/media/ashin-cv.pdf": "/Portfolio/static/media/ashin-cv.cc3f000ecd4c7ac9a45e.pdf",
+    "index.html": "/Portfolio/index.html",
+    "main.a46239f8.css.map": "/Portfolio/static/css/main.a46239f8.css.map",
+    "main.84b64c85.js.map": "/Portfolio/static/js/main.84b64c85.js.map",
+    "453.f07e1176.chunk.js.map": "/Portfolio/static/js/453.f07e1176.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a46239f8.css",
+    "static/js/main.84b64c85.js"
+  ]
+}
