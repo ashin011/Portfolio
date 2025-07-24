@@ -1,3 +1,5 @@
+/* =============== CONTACT SECTION =============== */
+
 .contact__container {
   display: flex;
   justify-content: center;
@@ -30,6 +32,7 @@
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .contact__card-icon {
   font-size: 1.5rem;
   color: #1f1f1f;
@@ -117,8 +120,27 @@
   font-size: 1.25rem;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* ============ RESPONSIVE MEDIA QUERIES ============ */
+
+/* Large Tablets / Small Desktops */
+@media screen and (max-width: 992px) {
+  .contact__container {
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .contact__left {
+    width: 200px;
+  }
+
+  .contact__right {
+    max-width: 100%;
+  }
+}
+
+/* Tablets and Below */
+@media screen and (max-width: 768px) {
   .contact__container {
     flex-direction: column;
     align-items: center;
@@ -130,9 +152,51 @@
 
   .contact__left {
     align-items: center;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .contact__card {
+    text-align: center;
   }
 
   .contact__right {
     max-width: 100%;
+    width: 100%;
+  }
+}
+
+/* Small Devices */
+@media screen and (max-width: 480px) {
+  .contact__container {
+    padding: 0 1rem;
+    gap: 1.5rem;
+  }
+
+  .contact__left {
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .contact__card {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .contact__form {
+    padding: 0 0.5rem;
+  }
+}
+
+/* Extra Small Devices */
+@media screen and (max-width: 350px) {
+  .contact__input {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.9rem;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
   }
 }
